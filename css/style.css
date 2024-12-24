@@ -27,6 +27,7 @@ ul {
     background-color: var(--color-primary-light);
 }
 
+/* LINK */
 .link {
     color: var(--color-primary-light);
     text-decoration: none;
@@ -34,17 +35,37 @@ ul {
 .link:hover {
     color: var(--color-brand-normal);
 }
+/* END LINK */
+
+/* HERO-SECTION */
 .hero-title {
     color: var(--color-primary-light);
+    text-align: center;
 }
 
 :where(.section-title, .hero-title) .accent {
     color: var(--color-brand-normal);
 }
+
+/* END HERO-SECTION */
+
+/* ADVANTAGES-SECTION */
 .advantages-list {
     background-color: var(--color-brand-normal);
     color: var(--color-primary-light);
 }
+
+/* END ADVANTAGES-SECTION */
+
+/* TRADITIONS-SECTION */
+
+.traditions-text .brand {
+    color: var(--color-brand-normal);
+}
+.traditions-text .uppercase {
+    text-transform: uppercase; }
+/* END TRADITIONS-SECTION */
+
 .section-title {
 
 }
