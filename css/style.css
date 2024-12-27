@@ -40,6 +40,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
 }
+h1, h2, h3, p {margin-top: 0;}
 ul {
   list-style-type: none;
 }
@@ -84,6 +85,9 @@ address {
 /* END LINK */
 
 /* HERO-SECTION */
+.hero-section {
+  padding: 272px auto;
+}
 .hero-title {
   color: var(--color-primary-light);
   text-align: center;
