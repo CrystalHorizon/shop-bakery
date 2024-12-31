@@ -1,28 +1,28 @@
 /* FONTS */
 
 @font-face {
-  font-display: swap; 
-  font-family: 'Poppins';
+  font-display: swap;
+  font-family: "Poppins";
   font-weight: 300;
-  src: url('../fonts/poppins-v22-latin-300.woff2') format('woff2');
+  src: url("../fonts/poppins-v22-latin-300.woff2") format("woff2");
 }
 @font-face {
-  font-display: swap; 
-  font-family: 'Poppins';
+  font-display: swap;
+  font-family: "Poppins";
   font-weight: 400;
-  src: url('../fonts/poppins-v22-latin-regular.woff2') format('woff2'); 
+  src: url("../fonts/poppins-v22-latin-regular.woff2") format("woff2");
 }
 @font-face {
-  font-display: swap; 
-  font-family: 'Poppins';
+  font-display: swap;
+  font-family: "Poppins";
   font-weight: 600;
-  src: url('../fonts/poppins-v22-latin-600.woff2') format('woff2'); 
+  src: url("../fonts/poppins-v22-latin-600.woff2") format("woff2");
 }
 @font-face {
-  font-display: swap; 
-  font-family: 'Poppins';
+  font-display: swap;
+  font-family: "Poppins";
   font-weight: 900;
-  src: url('../fonts/poppins-v22-latin-900.woff2') format('woff2'); 
+  src: url("../fonts/poppins-v22-latin-900.woff2") format("woff2");
 }
 /* END FONTS */
 
@@ -33,7 +33,9 @@
   --color-primary-dark: #31261a;
   --bakery-landing-yellow: #a18268;
 }
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 body {
   color: var(--color-primary-dark);
   font-family: "Poppins", sans-serif;
@@ -41,7 +43,12 @@ body {
   font-weight: 400;
   line-height: 1.5;
 }
-h1, h2, h3, p {margin-top: 0;}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
 ul {
   list-style-type: none;
 }
@@ -105,6 +112,14 @@ address {
 /* END HERO-SECTION */
 
 /* ADVANTAGES-SECTION */
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 .advantages-list {
   background-color: var(--color-brand-normal);
   color: var(--color-primary-light);
@@ -118,12 +133,18 @@ address {
 /* END ADVANTAGES-SECTION */
 
 /* TRADITIONS-SECTION */
-
+.traditions-section {
+  padding-top: 96px;
+  padding-bottom: 48px;
+}
 .traditions-text .brand {
   color: var(--color-brand-normal);
 }
 .traditions-text .uppercase {
   text-transform: uppercase;
+}
+.traditions-title {
+  margin-bottom: 42px;
 }
 /* END TRADITIONS-SECTION */
 
@@ -132,6 +153,9 @@ address {
   font-weight: 600;
   font-size: 40px;
   color: var(--color-primary-dark);
+}
+.chefs-title {
+  margin-bottom: 80px;
 }
 /* END CHEFS-SECTION */
 
