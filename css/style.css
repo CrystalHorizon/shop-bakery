@@ -33,6 +33,13 @@
   --color-primary-dark: #31261a;
   --bakery-landing-yellow: #a18268;
 }
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 24px;
+}
 * {
   box-sizing: border-box;
 }
@@ -51,6 +58,8 @@ p {
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 address {
   font-style: normal;
@@ -63,10 +72,19 @@ address {
   line-height: 131%;
   color: var(--color-primary-dark);
 }
-
+/* HEADER */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
 .button {
   /* display: block; */
-  padding: 10px 24px;
+  padding: 16px 32px;
   color: var(--color-primary-light);
   font-weight: 600;
   background-color: var(--color-brand-normal);
@@ -93,6 +111,7 @@ address {
   font-weight: 600;
 }
 /* END LINK */
+/* END HEADER */
 
 /* HERO-SECTION */
 .hero-section {
@@ -153,6 +172,7 @@ address {
   font-weight: 600;
   font-size: 40px;
   color: var(--color-primary-dark);
+  margin-bottom: 16px;
 }
 .chefs-title {
   margin-bottom: 80px;
@@ -170,8 +190,15 @@ address {
   font-size: 14px;
   color: var(--color-primary-light);
 }
+.formats-title {
+  margin-bottom: 80px;
+}
 /* END FORMATS-SECTION */
-
+/* CONTACT */
+.cotact-title {
+  margin-bottom: 16px;
+}
+/* END CONTACT */
 /* FOOTER */
 .address-link {
   font-weight: 300;
