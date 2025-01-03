@@ -32,6 +32,7 @@
   --color-brand-dark: #465929;
   --color-primary-dark: #31261a;
   --bakery-landing-yellow: #a18268;
+  --color-decor: #cfcfbc;
 }
 
 .container {
@@ -67,11 +68,15 @@ address {
 .section-title {
   font-weight: 900;
   font-size: 64px;
-
   /* line-height: 84px; */
   line-height: 131%;
   color: var(--color-primary-dark);
 }
+  .centered {
+    margin: 0 auto 80px;
+    text-align: center;
+  }
+
 /* HEADER */
 .header-container {
   display: flex;
@@ -205,16 +210,21 @@ address {
   margin-bottom: 16px;
 }
 .chefs-title {
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
+  max-width: 532px;
 }
-.chefs-title::before {
+.chefs-title::before,
+.chefs-title::after {
   content: '';
   display: block;
   width: 352px;
-  border: 1px solid #cfcfbc;
+  border: 1px solid var(--color-decor);
 }
-.chefs-title::after {
-  content: '*';
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+  -16px 16px 0 2px var(--color-primary-dark)
+  ;
 }
 /* END CHEFS-SECTION */
 
