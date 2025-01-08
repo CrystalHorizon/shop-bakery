@@ -286,4 +286,7 @@ address {
   font-size: 14px;
   color: var(--bakery-landing-yellow);
 }
+.address-icon {
+  fill: var(--color-primary-light);
+}
 /* END FOOTER */
