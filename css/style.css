@@ -258,6 +258,14 @@ address {
 .formats-title {
   margin-bottom: 80px;
 }
+/* carousel */
+.carousel-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  
+}
+/* END carousel */
 /* END FORMATS-SECTION */
 /* CONTACT */
 .cotact-title {
