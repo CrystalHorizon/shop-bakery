@@ -72,10 +72,10 @@ address {
   line-height: 131%;
   color: var(--color-primary-dark);
 }
-  .centered {
-    margin: 0 auto 80px;
-    text-align: center;
-  }
+.centered {
+  margin: 0 auto 80px;
+  text-align: center;
+}
 
 /* HEADER */
 .header-container {
@@ -129,7 +129,7 @@ address {
 /* HERO-SECTION */
 .hero-section {
   padding: 272px 0;
-  background-image: url('../images/hero-section-background.jpg');
+  background-image: url("../images/hero-section-background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -215,7 +215,7 @@ address {
 }
 .chefs-title::before,
 .chefs-title::after {
-  content: '';
+  content: "";
   display: block;
   width: 352px;
   border: 1px solid var(--color-decor);
@@ -223,8 +223,7 @@ address {
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
   box-shadow: -16px 16px 0 0 var(--color-primary-light),
-  -16px 16px 0 2px var(--color-primary-dark)
-  ;
+    -16px 16px 0 2px var(--color-primary-dark);
 }
 /* END CHEFS-SECTION */
 
@@ -240,7 +239,12 @@ address {
   /* flex-grow: 1; */
   padding: 24px;
   height: 444px;
-  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
 }
 .formats-item {
   flex-basis: calc((100% - 40px) / 3);
@@ -260,11 +264,24 @@ address {
 }
 /* carousel */
 .carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  fill: var(--color-primary-dark);
+  padding: 0;
+  cursor: pointer;
   
+  border-radius: 50%;
 }
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
 /* END carousel */
 /* END FORMATS-SECTION */
 /* CONTACT */
@@ -275,7 +292,7 @@ address {
 /* FOOTER */
 .footer {
   background-color: var(--color-primary-dark);
-  background-image: url('../images/footer-background.png');
+  background-image: url("../images/footer-background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -296,5 +313,8 @@ address {
 }
 .address-icon {
   fill: var(--color-primary-light);
+}
+.address-icon:hover {
+  fill: var(--color-brand-normal);
 }
 /* END FOOTER */
