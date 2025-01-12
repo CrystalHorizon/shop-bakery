@@ -41,7 +41,9 @@
   margin: 0 auto;
   padding: 24px;
 }
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 body {
@@ -58,6 +60,7 @@ h3,
 p {
   margin-top: 0;
 }
+a {display: inline-block;}
 ul {
   list-style-type: none;
   margin: 0;
@@ -213,6 +216,7 @@ address {
 .chefs-title {
   /* margin-bottom: 80px; */
   max-width: 532px;
+  position: relative;
 }
 .chefs-title::before,
 .chefs-title::after {
@@ -221,9 +225,20 @@ address {
   width: 352px;
   border: 1px solid var(--color-decor);
 }
+.chefs-title::before {
+  position: absolute;
+    bottom: 0;
+    left: -352px;
+}
+.chefs-title::after {
+  position: absolute;
+    bottom: 0;
+    right: -352px;
+}
 .chefs-list {
   display: flex;
-  gap: 30px;
+  gap: 40px 30px;
+  flex-wrap: wrap;
 }
 .chefs-item {
   flex-basis: calc((100% - 30px) / 2);
@@ -236,6 +251,12 @@ address {
   border-radius: 4px 4px 4px 200px;
   box-shadow: -16px 16px 0 0 var(--color-primary-light),
     -16px 16px 0 2px var(--color-primary-dark);
+}
+.chef-text p {
+  margin-bottom: 24px;
+}
+.chef-text p:last-child {
+  margin-bottom: 0;
 }
 
 /* END CHEFS-SECTION */
