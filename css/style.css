@@ -60,7 +60,9 @@ h3,
 p {
   margin-top: 0;
 }
-a {display: inline-block;}
+a {
+  display: inline-block;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -82,6 +84,13 @@ address {
 }
 
 /* HEADER */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -108,6 +117,7 @@ address {
   border: 2px solid var(--color-brand-normal);
   border-radius: 8px;
   cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .button:hover {
@@ -122,10 +132,11 @@ address {
   color: var(--color-primary-light);
   text-decoration: none;
   text-align: center;
+  transition: color 0.3s;
 }
 .link:hover {
   color: var(--color-brand-normal);
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 /* END LINK */
 /* END HEADER */
@@ -133,7 +144,13 @@ address {
 /* HERO-SECTION */
 .hero-section {
   padding: 272px 0;
-  background-image: url("../images/hero-section-background.jpg");
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url("../images/hero-section-background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -227,13 +244,13 @@ address {
 }
 .chefs-title::before {
   position: absolute;
-    bottom: 24px;
-    left: 0;
+  bottom: 24px;
+  left: 0;
 }
 .chefs-title::after {
   position: absolute;
-    bottom: 24px;
-    right: 0;
+  bottom: 24px;
+  right: 0;
 }
 .chefs-list {
   display: flex;
@@ -279,6 +296,10 @@ address {
     rgba(49, 38, 26, 0.71) 72.92%,
     var(--color-primary-dark) 100%
   );
+  transition: transform 0.3s;
+}
+.format-card:hover {
+  transform: scale(1.05);
 }
 .formats-item {
   flex-basis: calc((100% - 40px) / 3);
@@ -317,6 +338,9 @@ address {
 
   border-radius: 50%;
 }
+.carousel-button.next {
+  transform: rotate(180deg);
+}
 .carousel-button:hover {
   background-color: var(--color-primary-dark);
   fill: var(--color-primary-light);
@@ -331,11 +355,19 @@ address {
 .contact-container {
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .contact-title {
   margin-bottom: 16px;
 }
+.contact-form,
 .contact-map {
+  width: calc((100% - 32px)/2);
+}
+.contact-map {
+  max-width: 603px;
+  width: 50%;
   flex-shrink: 0;
   border: none;
   border-radius: 16px;
@@ -354,23 +386,23 @@ address {
 }
 .footer::after,
 .footer::before {
-  contain: '';
+  contain: "";
   position: absolute;
   background-repeat: no-repeat;
 }
 .footer::after {
-
   background-image: url(../images/bread-footer.png);
   width: 180px;
   height: 120px;
-  bottom: 0;}
+  bottom: 0;
+}
 .footer::before {
-
   background-image: url(../images/bread-duble-footer.png);
-    width: 380px;
+  width: 380px;
   height: 190px;
   right: 0;
-  bottom: 0;}
+  bottom: 0;
+}
 .footer-container {
   display: flex;
   gap: 20px;
@@ -417,7 +449,8 @@ address {
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;align-items: center;
+  display: flex;
+  align-items: center;
   padding: 20px 0;
   transition: opacity 0.3s, visibility 0.3s;
 }
@@ -430,6 +463,8 @@ address {
   background-color: var(--color-primary-light);
   border-radius: 30px;
   margin: auto;
+  padding: 128px;
+  overflow-y: auto;
 }
 .modal-btn-close {
   position: absolute;
@@ -437,18 +472,53 @@ address {
   right: 40px;
   padding: 16px 32px;
   border-radius: 8px;
+  border: 1px solid var(--color-brand-normal);
   color: white;
-  background-color: var(--color-brand-dark);
+  background-color: var(--color-brand-normal);
 }
 .modal-btn-close:hover {
-  color:var(--color-primary-dark);
+  color: var(--color-primary-dark);
   font-weight: 500;
   background-color: var(--color-primary-light);
+  cursor: pointer;
 }
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  
+}
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 16px 42px;
+
+  border: 1px solid var(--bakery-landing-yellow);
+  border-radius: 8px;
+  background-color: transparent;
+}
+.form-field {
+  margin-bottom: 32px;
+}
+.form-input:focus {
+  border-color: var(--color-brand-normal);
+  outline: none;
+}
+.form-input::not(:placeholder-shown)::placeholder {
+  color: var(--color-primary-dark);
+}
+.form-btn {
+  margin: 0 auto 24px;display: block;
+
+}
+.form-terms {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  width: 213px;
+  margin: 0 auto;
+}
+.form-terms-link {
+  color: var(--color-primary-dark);
 }
 /* END MODAL */
