@@ -335,7 +335,7 @@
         <button class="modal-btn-close" type="button">Close</button>
         <h3>Замовити дзвінок</h3>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form class="modal-form" action="#">
+        <form class="modal-form" action="#" autocomplete="on">
           <div class="form-field">
             <label class="hidden" for="user-name">Ім'я</label>
             <input
@@ -344,6 +344,7 @@
               name="user-name"
               id="user-name"
               placeholder="Ім'я"
+              required
             />
           </div>
           <div class="form-field">
@@ -354,6 +355,7 @@
               name="user-tel"
               id="user-tel"
               placeholder="Телефон"
+              required
 
             />
           </div>
@@ -365,7 +367,7 @@
               name="user-email"
               id="user-email"
               placeholder="Email"
-
+              required
             />
           </div>
           <button class="form-btn button" type="submit">Відправити</button>
