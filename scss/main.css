@@ -310,6 +310,8 @@ address {
 
 .format-card {
   position: relative;
+  display: flex;
+  justify-content: flex-end;
   border-radius: 16px;
   border: 1px solid lightgray; /*remove*/
   /* flex-grow: 1; */
