@@ -1,0 +1,22 @@
+.chef-card {
+  display: flex;
+  gap: 30px;
+  &-title {
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--color-primary-dark);
+    margin-bottom: 16px;
+  }
+
+  &-photo {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--color-primary-light),
+      -16px 16px 0 2px var(--color-primary-dark);
+  }
+  &-text p {
+    margin-bottom: 24px;
+  }
+  &-text p:last-child {
+    margin-bottom: 0;
+  }
+}
