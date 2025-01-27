@@ -38,90 +38,14 @@
 /* END TRADITIONS-SECTION */
 
 /* CHIEFS-SECTION */
-@import './layout/chef-card';
-@import './layout/chefs-section';
+@import "./layout/chef-card";
+@import "./layout/chefs-section";
 /* END CHIEFS-SECTION */
 
 /* FORMATS-SECTION */
-.formats-list {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.format-card {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  border-radius: 16px;
-  border: 1px solid lightgray; /*remove*/
-  /* flex-grow: 1; */
-  padding: 24px;
-  height: 444px;
-  background-image: linear-gradient(
-    180deg,
-    rgba(49, 38, 26, 0) 55.21%,
-    rgba(49, 38, 26, 0.71) 72.92%,
-    var(--color-primary-dark) 100%
-  );
-  transition: transform 0.3s;
-}
-.format-card:hover {
-  transform: scale(1.05);
-}
-.formats-item {
-  flex-basis: calc((100% - 40px) / 3);
-}
-.format-title {
-  font-weight: 600;
-  font-size: 24px;
-  color: var(--color-primary-light);
-}
-.formats-container {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-}
-.format-text {
-  font-weight: 300;
-  font-size: 14px;
-  color: var(--color-primary-light);
-}
-.formats-title {
-  margin-bottom: 80px;
-}
-
-.format-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* carousel */
-.carousel-button {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background-color: transparent;
-  border: 1px solid var(--color-primary-dark);
-  fill: var(--color-primary-dark);
-  padding: 0;
-  cursor: pointer;
-
-  border-radius: 50%;
-}
-.carousel-button.next {
-  transform: rotate(180deg);
-}
-.carousel-button:hover {
-  background-color: var(--color-primary-dark);
-  fill: var(--color-primary-light);
-}
-
-/* END carousel */
+@import './layout/formats-section';
+@import './layout/format-card';
+@import "./components/carousel-button";
 /* END FORMATS-SECTION */
 /* CONTACT */
 .contact-section {
