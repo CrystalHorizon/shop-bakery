@@ -48,29 +48,7 @@
 @import "./components/carousel-button";
 /* END FORMATS-SECTION */
 /* CONTACT */
-.contact-section {
-  padding-bottom: 96px;
-}
-.contact-container {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.contact-title {
-  margin-bottom: 16px;
-}
-.contact-form,
-.contact-map {
-  width: calc((100% - 32px) / 2);
-}
-.contact-map {
-  max-width: 603px;
-  width: 50%;
-  flex-shrink: 0;
-  border: none;
-  border-radius: 16px;
-}
+@import './layout/contact-section';
 /* END CONTACT */
 /* FOOTER */
 
