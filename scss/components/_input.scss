@@ -1,0 +1,23 @@
+.input {
+  position: relative;
+}
+
+.input__control {
+  display: block;
+  width: 100%;
+  padding: 16px 42px;
+
+  border: 1px solid var(--bakery-landing-yellow);
+  border-radius: 8px;
+  background-color: transparent;
+}
+.form-field {
+  margin-bottom: 32px;
+}
+.input__control:focus {
+  border-color: var(--color-brand-normal);
+  outline: none;
+}
+.input__control::not(:placeholder-shown)::placeholder {
+  color: var(--color-primary-dark);
+}
