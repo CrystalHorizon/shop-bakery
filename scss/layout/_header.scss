@@ -19,25 +19,26 @@
   }
 
   &__menu {
-    display: flex;
-    gap: 64px;
-    flex-grow: 1;
-    justify-content: center;
- 
-    @media (max-width: $bp-desctop) {
-      display: none;
-    }
+    display: none;
 
+    @media (min-width: $bp-desctop) {
+      display: flex;
+      gap: 64px;
+      flex-grow: 1;
+      justify-content: center;
+    }
   }
   &__button {
-    @media (max-width: $bp-desctop) {
-      display: none;
+    display: none;
+    @media (min-width: $bp-desctop) {
+      display: block;
     }
   }
   &__burger {
-    display: none;
-    @media (max-width: $bp-desctop) {
-      display: block;
+    display: block;
+
+    @media (min-width: $bp-desctop) {
+      display: none;
     }
   }
 }
