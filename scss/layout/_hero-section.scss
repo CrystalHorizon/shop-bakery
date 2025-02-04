@@ -1,5 +1,5 @@
 .hero-section {
-  padding: 272px 0;
+  padding: 124px;
   background-image: linear-gradient(
       102.76deg,
       rgba(18, 18, 17, 0.78) 2.03%,
@@ -21,6 +21,8 @@
     @media (min-width: $bp-tablet) {
       font-size: 128px;
       line-height: 1.5;
+  padding: 272px 0;
+
     }
   }
 }

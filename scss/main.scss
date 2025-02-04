@@ -43,14 +43,14 @@
 /* END CHIEFS-SECTION */
 
 /* FORMATS-SECTION */
-@import './layout/formats-section';
-@import './layout/format-card';
+@import "./layout/formats-section";
+@import "./layout/format-card";
 @import "./components/carousel-button";
 /* END FORMATS-SECTION */
 /* CONTACT */
-@import './layout/contact-section';
-@import './layout/forms-terms';
-@import './components/input';
+@import "./layout/contact-section";
+@import "./layout/forms-terms";
+@import "./components/input";
 /* END CONTACT */
 /* FOOTER */
 
@@ -121,6 +121,8 @@
 /* END FOOTER */
 
 /* MODAL */
-@import './layout/modal';
+@import "./layout/modal";
 
 /* END MODAL */
+// MOBILE-MENU
+@import "./layout/mobile-menu";

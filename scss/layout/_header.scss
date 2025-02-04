@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 16px;
+
 
   &__container {
     display: flex;
@@ -35,10 +36,18 @@
     }
   }
   &__burger {
-    display: block;
+    // display: block;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    fill: var(--color-primary-light);
 
     @media (min-width: $bp-desctop) {
       display: none;
+  padding-top: 32px;
+
     }
   }
 }
