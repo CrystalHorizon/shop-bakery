@@ -17,13 +17,22 @@
     font-size: 67px;
     font-weight: 900;
     line-height: 1;
+    margin-bottom: 48px;
 
-    @media (min-width: $bp-tablet) {
+    @media (min-width: $bp-desktop) {
       font-size: 128px;
       line-height: 1.5;
   padding: 272px 0;
 
     }
+  }
+  &__button {
+    margin: 0 auto;
+
+       @media (min-width: $bp-desktop) {
+      display: none;
+
+    } 
   }
 }
 
