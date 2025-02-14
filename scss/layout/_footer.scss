@@ -1,0 +1,70 @@
+.footer {
+  background-color: var(--color-primary-dark);
+  background-image: url("../images/footer-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 32px 0;
+  position: relative;
+
+  &::after,
+  &::before {
+    contain: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  &::after {
+    background-image: url(../images/bread-footer.png);
+    width: 180px;
+    height: 120px;
+    bottom: 0;
+  }
+  &::before {
+    background-image: url(../images/bread-duble-footer.png);
+    width: 380px;
+    height: 190px;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+  &__nav,
+  &__address {
+    flex-basis: calc(100% / 2);
+    display: flex;
+    gap: 20px;
+  }
+
+  &__logo,
+  &__menu {
+    flex-basis: 50%;
+  }
+
+  &__address-list,
+  &__address-info {
+    flex-basis: 50%;
+  }
+  &__address-link {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--color-primary-light);
+    text-decoration: none;
+  }
+  &__address-link:hover {
+    color: var(--color-brand-normal);
+  }
+  &__address-copyright {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--bakery-landing-yellow);
+  }
+  &__address-icon {
+    fill: var(--color-primary-light);
+  }
+  &__address-icon:hover {
+    fill: var(--color-brand-normal);
+  }
+}

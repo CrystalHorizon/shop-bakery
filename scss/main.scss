@@ -55,70 +55,7 @@
 /* END CONTACT */
 /* FOOTER */
 
-.footer {
-  background-color: var(--color-primary-dark);
-  background-image: url("../images/footer-background.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 32px 0;
-  position: relative;
-}
-.footer::after,
-.footer::before {
-  contain: "";
-  position: absolute;
-  background-repeat: no-repeat;
-}
-.footer::after {
-  background-image: url(../images/bread-footer.png);
-  width: 180px;
-  height: 120px;
-  bottom: 0;
-}
-.footer::before {
-  background-image: url(../images/bread-duble-footer.png);
-  width: 380px;
-  height: 190px;
-  right: 0;
-  bottom: 0;
-}
-.footer-container {
-  display: flex;
-  gap: 20px;
-}
-.footer-nav,
-.footer-address {
-  flex-basis: calc(100% / 2);
-  display: flex;
-  gap: 20px;
-}
-.footer-logo,
-.footer-menu,
-.address-list,
-.address-info {
-  flex-basis: 50%;
-}
-.address-link {
-  font-weight: 300;
-  font-size: 16px;
-  color: var(--color-primary-light);
-  text-decoration: none;
-}
-.address-link:hover {
-  color: var(--color-brand-normal);
-}
-.address-copyright {
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--bakery-landing-yellow);
-}
-.address-icon {
-  fill: var(--color-primary-light);
-}
-.address-icon:hover {
-  fill: var(--color-brand-normal);
-}
+@import './layout/footer';
 /* END FOOTER */
 
 /* MODAL */
