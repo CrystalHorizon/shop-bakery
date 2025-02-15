@@ -5,17 +5,19 @@ const swiper = new Swiper(".swiper-container", {
   loop: true,
 
   pagination: {
-    el: ".swiper-pagination",
+    el: ".pagination",
+    bulletClass: "pagination__button",
+    bulletActiveClass: "pagination__button--active",
   },
   navigation: {
     nextEl: ".carousel-button.next",
     prevEl: ".carousel-button.prev",
   },
   breakpoints: {
-    480: {
+    768: {
       slidesPerView: 2,
     },
-    768: {
+    1280: {
       slidesPerView: 3,
     },
   },
